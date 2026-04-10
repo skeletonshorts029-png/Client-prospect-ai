@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SiteCraft Prospect AI</title>
+    <meta
+      name="description"
+      content="Professional lead generation workspace for finding local businesses with no website and launching outreach."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css?v=6" />
+  </head>
+  <body>
+    <div class="bg-grid"></div>
+    <div class="bg-orb bg-orb-left"></div>
+    <div class="bg-orb bg-orb-right"></div>
+
+    <header class="site-nav shell">
+      <a class="brand" href="/">
+        <span class="brand-mark">SC</span>
+        <span class="brand-copy">
+          <strong>SiteCraft</strong>
+          <span>Prospect AI</span>
+        </span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#search-panel">Search</a>
+        <a href="#results-panel">Results</a>
+        <a href="#outreach-panel">Outreach</a>
+      </nav>
+
+      <div class="nav-actions">
+        <span id="configStatusBadge" class="status-pill">Checking server config...</span>
+      </div>
+    </header>
+
+    <section class="shell hero-grid">
+      <div class="panel hero-copy">
+        <div class="hero-kicker">
+          <span class="eyebrow">Apify-powered lead engine</span>
+          <span class="pill-highlight">Website gap targeting</span>
+        </div>
+        <h1>Find local businesses that already have demand but still need a serious web presence.</h1>
+        <p class="hero-text">
+          Search by location and niche, rank the best no-website leads, attach your demo site,
+          then open a WhatsApp draft or send the payload into your automation.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#search-panel">Start searching</a>
+          <a class="button button-secondary" href="#outreach-panel">Open outreach flow</a>
+        </div>
+
+        <div class="hero-proof">
+          <div class="proof-card">
+            <span class="proof-value">Apify</span>
+            <span class="proof-label">Live local search</span>
+          </div>
+          <div class="proof-card">
+            <span class="proof-value">No website</span>
+            <span class="proof-label">Lead prioritization</span>
+          </div>
+          <div class="proof-card">
+            <span class="proof-value">Email + WhatsApp</span>
+            <span class="proof-label">Contact-ready outreach</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="panel hero-visual">
+        <div class="visual-badge">Elite outreach workspace</div>
+        <img
+          class="hero-illustration"
+          src="/assets/hero-scene.svg"
+          alt="SiteCraft prospecting dashboard preview"
+        />
+        <div class="visual-stats">
+          <div class="visual-stat">
+            <span class="visual-label">Lead score</span>
+            <strong>100</strong>
+          </div>
+          <div class="visual-stat">
+            <span class="visual-label">Demo link</span>
+            <strong>Ready</strong>
+          </div>
+          <div class="visual-stat">
+            <span class="visual-label">WhatsApp</span>
+            <strong>One click</strong>
+          </div>
+        </div>
+      </aside>
+
+      <section class="panel command-panel" id="search-panel">
+        <div class="window-bar">
+          <span class="window-dot dot-red"></span>
+          <span class="window-dot dot-yellow"></span>
+          <span class="window-dot dot-green"></span>
+          <span class="window-title">Lead discovery workspace</span>
+        </div>
+
+        <div class="section-head compact-head">
+          <div>
+            <p class="eyebrow">Search</p>
+            <h2>Build your next lead list</h2>
+          </div>
+          <p id="searchSummary" class="section-note">No search yet</p>
+        </div>
+
+        <form id="searchForm" class="command-grid">
+          <label class="field">
+            <span>Location</span>
+            <input id="location" type="text" placeholder="Jaipur" required />
+          </label>
+          <label class="field">
+            <span>Business type</span>
+            <input id="businessType" type="text" placeholder="cafe" required />
+          </label>
+          <label class="field field-wide">
+            <span>Keyword boost</span>
+            <input id="keyword" type="text" placeholder="artisan, speciality coffee, family clinic" />
+          </label>
+          <label class="field">
+            <span>Min reviews</span>
+            <input id="minReviews" type="number" min="0" max="100000" value="20" />
+          </label>
+          <label class="field">
+            <span>Result limit</span>
+            <input id="pageSize" type="number" min="5" max="50" value="15" />
+          </label>
+          <label class="field checkbox-field">
+            <input id="onlyNoWebsite" type="checkbox" checked />
+            <span>Only show businesses with no website</span>
+          </label>
+
+          <div class="search-actions">
+            <button class="button button-primary" type="submit">Find leads</button>
+            <span class="live-note">Real Apify results only</span>
+          </div>
+        </form>
+
+        <div class="command-footer">
+          <span class="info-chip">Review score weighted</span>
+          <span class="info-chip">Website gap filter</span>
+          <span class="info-chip">Business email when found</span>
+          <span class="info-chip">WhatsApp-ready outreach</span>
+        </div>
+      </section>
+    </section>
+
+    <section class="shell showcase-grid">
+      <article class="panel showcase-card">
+        <div class="showcase-copy">
+          <p class="eyebrow">Premium search</p>
+          <h3>Lead discovery that looks like a real SaaS product</h3>
+          <p>
+            Strong gradients, polished surfaces, image-backed cards, and a cleaner real-search-first
+            experience make the app feel finished instead of empty.
+          </p>
+        </div>
+        <img
+          class="showcase-image"
+          src="/assets/process-scene.svg"
+          alt="Lead generation workflow preview"
+        />
+      </article>
+
+      <article class="panel mini-showcase">
+        <p class="eyebrow">What you can do</p>
+        <ul class="feature-list">
+          <li>Search cafes, clinics, salons, gyms, and more</li>
+          <li>Highlight leads with reviews but no website</li>
+          <li>Show business email when Apify finds it</li>
+          <li>Attach your custom demo link in seconds</li>
+          <li>Open WhatsApp drafts or dispatch to automation</li>
+        </ul>
+      </article>
+    </section>
+
+    <main class="shell dashboard-grid">
+      <section class="panel stack setup-panel" id="setup-panel">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Setup</p>
+            <h2>Source and sender profile</h2>
+          </div>
+          <p class="section-note">
+            Keep your Apify config on the server or paste a run URL here for this session.
+          </p>
+        </div>
+
+        <div class="form-grid">
+          <label class="field field-full">
+            <span>Apify run URL</span>
+            <input
+              id="apifyRunUrl"
+              type="url"
+              placeholder="https://api.apify.com/v2/actor-runs/<runId>?token=<token>"
+            />
+          </label>
+          <label class="field">
+            <span>Sender name</span>
+            <input id="senderName" type="text" placeholder="Ayush" />
+          </label>
+          <label class="field">
+            <span>Sender brand</span>
+            <input id="senderBrand" type="text" placeholder="SiteCraft" />
+          </label>
+          <label class="field field-wide">
+            <span>CTA link</span>
+            <input
+              id="ctaLink"
+              type="url"
+              placeholder="https://ayushfun77-tech.github.io/SiteCraft"
+            />
+          </label>
+          <label class="field field-wide">
+            <span>Meeting link</span>
+            <input id="meetingLink" type="url" placeholder="https://calendly.com/your-name/demo" />
+          </label>
+          <label class="field">
+            <span>Message tone</span>
+            <select id="messageTone">
+              <option value="friendly">Friendly</option>
+              <option value="direct">Direct</option>
+              <option value="premium">Premium</option>
+            </select>
+          </label>
+          <div class="field action-field">
+            <span>Draft settings</span>
+            <button id="saveDraftButton" class="button button-secondary" type="button">
+              Save locally
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel stack spotlight-panel">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Top match</p>
+            <h2>Lead spotlight</h2>
+          </div>
+          <p class="section-note">Your strongest lead appears here first after each search.</p>
+        </div>
+        <div id="spotlightCard" class="spotlight-card empty-card">
+          Run a real search to see your top-ranked lead.
+        </div>
+      </section>
+
+      <section class="panel stack results-panel" id="results-panel">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Results</p>
+            <h2>Ranked lead list</h2>
+          </div>
+          <p class="section-note">
+            Click any card to load it into the outreach composer.
+          </p>
+        </div>
+        <div id="resultsGrid" class="results-grid">
+          <article class="lead-card empty-card">No results yet. Search a real location and business type.</article>
+        </div>
+      </section>
+
+      <section class="panel stack outreach-panel" id="outreach-panel">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Outreach</p>
+            <h2>Compose and launch</h2>
+          </div>
+          <p class="section-note">
+            Paste your demo site, refresh the message, then open WhatsApp or dispatch to your automation.
+            Business email appears here too when Apify finds one.
+          </p>
+        </div>
+
+        <div class="composer-grid">
+          <div class="selected-lead-card" id="selectedLeadCard">
+            Pick a lead from the results to start composing.
+          </div>
+
+          <div class="composer-stack">
+            <label class="field">
+              <span>Demo website link</span>
+              <input id="demoLink" type="url" placeholder="https://your-demo-site.example.com" />
+            </label>
+            <label class="field">
+              <span>Extra hook</span>
+              <input
+                id="customHook"
+                type="text"
+                placeholder="Optional line like: I already mocked up your menu, reviews, and map section."
+              />
+            </label>
+            <label class="field">
+              <span>Generated message</span>
+              <textarea id="messageOutput" rows="12"></textarea>
+            </label>
+          </div>
+        </div>
+
+        <div class="composer-actions">
+          <button id="refreshMessageButton" class="button button-secondary" type="button">
+            Refresh message
+          </button>
+          <button id="copyMessageButton" class="button button-secondary" type="button">
+            Copy message
+          </button>
+          <button id="openWhatsAppButton" class="button button-primary" type="button">
+            Open WhatsApp draft
+          </button>
+          <button id="dispatchButton" class="button button-secondary" type="button">
+            Dispatch to automation
+          </button>
+          <button id="openMapsButton" class="button button-ghost" type="button">
+            Open Maps listing
+          </button>
+          <button id="openCtaButton" class="button button-ghost" type="button">
+            Open CTA link
+          </button>
+        </div>
+      </section>
+
+      <section class="panel stack notes-panel">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">How it works</p>
+            <h2>Workflow overview</h2>
+          </div>
+        </div>
+
+        <div class="note-grid">
+          <article class="note-card">
+            <h3>1. Search live local listings</h3>
+            <p>The backend triggers Apify, fetches fresh places, and normalizes the results into one ranked lead stream.</p>
+          </article>
+          <article class="note-card">
+            <h3>2. Prioritize website gaps</h3>
+            <p>Leads with strong reviews and no website rise first so your pitch lands where it matters most.</p>
+          </article>
+          <article class="note-card">
+            <h3>3. Launch outreach fast</h3>
+            <p>Use the built-in message composer, open a WhatsApp draft, or pass the lead into your webhook automation.</p>
+          </article>
+        </div>
+        <p id="toast" class="toast" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="/app.js?v=6" defer></script>
+  </body>
+</html>
