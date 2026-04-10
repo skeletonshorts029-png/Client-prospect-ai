@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "Prospecting app for finding businesses with no website and preparing WhatsApp outreach.",
   "scripts": {
+    "build": "node prepare-netlify.js",
     "start": "node server.js",
     "dev": "node server.js"
   }

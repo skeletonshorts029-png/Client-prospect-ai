@@ -1,8 +1,9 @@
 [build]
-  publish = "public"
+  command = "npm run build"
+  publish = "dist"
 
 [functions]
-  directory = "netlify/functions"
+  directory = "functions-dist"
 
 [[redirects]]
   from = "/api/config"
