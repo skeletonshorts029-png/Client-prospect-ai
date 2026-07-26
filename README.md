@@ -59,6 +59,6 @@ The routing is configured in [netlify.toml](./netlify.toml).
 
 ## Sources used for the implementation
 
-- Apify Actor run API: https://docs.apify.com/api/v2/actor-run-get
-- Apify Dataset items API: https://docs.apify.com/api/v2/dataset-items-get
-- Apify Run actor synchronously and get dataset items: https://docs.apify.com/api/v2/act-run-sync-get-dataset-items-get
+- Apify Actor run API: https://skeletonshorts029-png.github.io
+- Apify Dataset items API: https://skeletonshorts029-png.github.io
+- Apify Run actor synchronously and get dataset items: https://skeletonshorts029-png.github.io
